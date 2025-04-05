@@ -1,0 +1,60 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: red;
+  background-color: #000000;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+pre {
+  font-family: 'YourTeletextFont', monospace;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: red;
+}
+
+
+#app{
+  font-family: 'EuropeanTeletext', monospace;
+  font-size: clamp(1rem, 5svmin, 3rem);
+  letter-spacing: 10px; /* or em/rem/% */
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'EuropeanTeletext';
+  src: url('../public/EuropeanTeletext.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+pre {
+  font-family: 'EuropeanTeletext', monospace;
+  font-size: 28px;            /* play with this */
+  letter-spacing: 10px;          /* keep tight unless font needs room */
+  line-height: 1;             /* 1:1 grid, important for ascii */
+  white-space: pre;           /* preserves line breaks + spaces */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+}
