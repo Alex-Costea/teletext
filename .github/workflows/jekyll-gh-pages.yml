@@ -27,7 +27,7 @@ jobs:
           node-version: 18
 
       - name: install dependencies
-        run: npm ci
+        run: npm install
 
       - name: build vite project
         run: npm run build
