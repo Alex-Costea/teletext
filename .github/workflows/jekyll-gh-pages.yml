@@ -26,17 +26,13 @@ jobs:
         with:
           node-version: 18
 
-      - name: install deps
-        run: |
-          cd my_app
-          npm ci
+      - name: install dependencies
+        run: npm ci
 
       - name: build vite project
-        run: |
-          cd my_app
-          npm run build
+        run: npm run build
 
-      - name: upload artifact
+      - name: upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
